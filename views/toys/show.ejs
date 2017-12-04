@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toy</title>
+  </head>
+  <body>
+    <h1>Toy</h1>
+    <span>Name: <%= toy.name %></span>
+    <span>Description: <%= toy.description %></span>
+    <form class="" action="/toys/delete/<%=toy.id%>" method="post">
+      <button type="submit" name="delete">delete</button>
+    </form>
+    <a href="/toys/edit/<%=toy.id%>">edit</a>
+    <!-- <form class="" action="/toys/edit/<%=toy.id%>" method="get">
+      <button type="submit" name="edit">edit</button>
+    </form> -->
+
+  </body>
+</html>

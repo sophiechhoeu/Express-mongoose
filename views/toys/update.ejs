@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update</title>
+  </head>
+  <body>
+    <h1>Update</h1>
+    <form method="post" action="/toys/update/<%= toy.id %>">
+      <fieldset>
+        <label>toy</label><br>
+        <input type="text" name="toy[name]" value="<%= toy.name %>">
+      </fieldset>
+      <fieldset>
+        <label>Description</label><br>
+        <input type="text" name="toy[description]" value="<%= toy.description %>">
+      </fieldset>
+      <input type="submit" value="update">
+    </form>
+
+  </body>
+</html>

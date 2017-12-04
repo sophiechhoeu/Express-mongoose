@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Toys</title></head>
+  <body>
+    <h1>Toys!</h1>
+    <% toys.forEach(function(toy, index) { %>
+      <div>
+        <span>Name: <%= toy.name %></span>
+        <span>Description: <%= toy.description %></span>
+        <span><a href="/toys/<%=toy.id%>">Show</a></span>
+      </div>
+    <% }); %>
+    <div><a href='/toys/new'>New Toy</a></div>
+  </body>
+</html>
